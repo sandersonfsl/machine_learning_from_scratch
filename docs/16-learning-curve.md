@@ -115,4 +115,4 @@ Together with the earlier tests, `uv run pytest` reports `29 passed`.
 
 ---
 
-[← Step 15: Feature scaling](15-feature-scaling.md)
+[← Step 15: Feature scaling](15-feature-scaling.md) · [Step 17: Feature engineering and polynomial regression →](17-feature-engineering.md)

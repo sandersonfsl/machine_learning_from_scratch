@@ -19,3 +19,4 @@ project root. Mathematical notation is rendered by GitHub.
 14. [Gradient descent with multiple features](14-multiple-gradient-descent.md)
 15. [Feature scaling](15-feature-scaling.md)
 16. [Learning curve and choosing alpha](16-learning-curve.md)
+17. [Feature engineering and polynomial regression](17-feature-engineering.md)

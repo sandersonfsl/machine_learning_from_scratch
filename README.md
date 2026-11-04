@@ -14,7 +14,7 @@ Requires [uv](https://docs.astral.sh/uv/) (see [Step 1](docs/01-setup.md)). Ever
 
 ```bash
 uv sync                                       # create the environment (once)
-uv run pytest                                 # run the tests: 29 passed
+uv run pytest                                 # run the tests: 35 passed
 uv run scripts/09_gradient_descent.py         # train a model: w = 2.85, b = 12.85
 for f in scripts/*.py; do uv run "$f"; done   # run every script
 ```
@@ -41,6 +41,7 @@ Each step adds code to the library and has a document with the theory, the code 
 | 14 | Gradient descent with multiple features | `14_multiple_gradient_descent.py` | [14-multiple-gradient-descent](docs/14-multiple-gradient-descent.md) |
 | 15 | Feature scaling | `15_feature_scaling.py` | [15-feature-scaling](docs/15-feature-scaling.md) |
 | 16 | Learning curve and choosing alpha | `16_learning_curve.py` | [16-learning-curve](docs/16-learning-curve.md) |
+| 17 | Feature engineering and polynomial regression | `17_feature_engineering.py` | [17-feature-engineering](docs/17-feature-engineering.md) |
 
 ## Project structure
 
