@@ -176,4 +176,4 @@ Together with the earlier tests, `uv run pytest` reports `24 passed`.
 
 ---
 
-[← Step 14: Gradient descent with multiple features](14-multiple-gradient-descent.md)
+[← Step 14: Gradient descent with multiple features](14-multiple-gradient-descent.md) · [Step 16: Learning curve and choosing alpha →](16-learning-curve.md)
