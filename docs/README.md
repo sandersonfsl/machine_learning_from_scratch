@@ -17,3 +17,4 @@ project root. Mathematical notation is rendered by GitHub.
 12. [Multiple features](12-multiple-features.md)
 13. [Vectorization](13-vectorization.md)
 14. [Gradient descent with multiple features](14-multiple-gradient-descent.md)
+15. [Feature scaling](15-feature-scaling.md)

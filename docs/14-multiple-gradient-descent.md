@@ -71,7 +71,7 @@ comes from the noise. The lowest cost any line can reach is 4.241.
 
 - With `alpha = 1e-7` the training **diverges**: the cost grows from 6.7 thousand to
   7 × 10⁵¹ in 50 steps. This `alpha` looks small, but it is already above the stability
-  limit for these data, which is about 5e-8.
+  limit for these data, which is about 5e-8 (computed in [Step 15](15-feature-scaling.md)).
 - With `alpha = 1e-8` the training is stable, but after **100,000 iterations** the cost
   is still 57.3, against a minimum of 4.24:
 
@@ -84,7 +84,7 @@ Only the weight of the distance moved. Its derivative is multiplied by values up
 10,000, so it is huge; the derivatives of the items (up to 12) and of the rush hour
 (0 or 1) are tiny. One `alpha` is shared by all weights: it is too large for the
 first and too small for the others. The features have very different scales, and
-that is what slows gradient descent down. Fixing it is the subject of Step 15.
+that is what slows gradient descent down. Fixing it is the subject of [Step 15](15-feature-scaling.md).
 
 ## Tests
 
@@ -103,4 +103,4 @@ Together with the earlier tests, `uv run pytest` reports `17 passed`.
 
 ---
 
-[← Step 13: Vectorization](13-vectorization.md)
+[← Step 13: Vectorization](13-vectorization.md) · [Step 15: Feature scaling →](15-feature-scaling.md)

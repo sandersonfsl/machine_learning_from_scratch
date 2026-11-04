@@ -18,7 +18,7 @@ The notation grows accordingly:
 
 The data stops being a list and becomes a table: a matrix `X` with `m` rows
 (deliveries) and `n` columns (features), in `src/machine_learning_from_scratch/data_multiple.py`.
-The distance is in **meters** on purpose; why that matters appears in Step 15.
+The distance is in **meters** on purpose; why that matters appears in [Step 15](15-feature-scaling.md).
 
 The model adds one term per feature:
 
