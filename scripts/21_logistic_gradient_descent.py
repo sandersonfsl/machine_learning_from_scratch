@@ -17,7 +17,9 @@ y_small = np.array([0, 0, 0, 1, 1, 1])
 w0, b0 = np.array([2.0, 3.0]), 1.0
 dj_dw, dj_db = compute_gradient_logistic(X_small, y_small, w0, b0)
 h = 1e-6
-numeric_db = (compute_cost_logistic(X_small, y_small, w0, b0 + h) - compute_cost_logistic(X_small, y_small, w0, b0 - h)) / (2 * h)
+numeric_db = (
+    compute_cost_logistic(X_small, y_small, w0, b0 + h) - compute_cost_logistic(X_small, y_small, w0, b0 - h)
+) / (2 * h)
 print("gradient of the small problem at w = [2, 3], b = 1")
 print(f"  dj_dw = {dj_dw.round(5)}, dj_db = {dj_db:.5f}")
 print(f"  numerical derivative in b: {numeric_db:.5f}")

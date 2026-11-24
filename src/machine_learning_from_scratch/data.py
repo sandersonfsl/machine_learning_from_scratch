@@ -1,5 +1,6 @@
 import numpy as np
 
+# fmt: off
 # x: distance of each delivery, in km (the input)
 x = np.array(
     [
@@ -21,6 +22,8 @@ y = np.array(
         39.2, 37.1, 39.8, 37.2, 42.1, 38.7, 41.0, 35.1, 42.9, 36.1,
     ]
 )
+
+# fmt: on
 
 # m: number of training examples
 m = len(x)

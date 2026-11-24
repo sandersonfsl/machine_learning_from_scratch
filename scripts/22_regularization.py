@@ -39,7 +39,12 @@ print("\nlogistic regression, 20,000 iterations")
 print("  lambda   train acc   test acc   train cost   test cost   sum of |w|")
 for lambda_ in LAMBDAS:
     w, b, _ = gradient_descent(
-        Z_train, y_train, np.zeros(Z_train.shape[1]), 0.0, 0.1, 20_000,
+        Z_train,
+        y_train,
+        np.zeros(Z_train.shape[1]),
+        0.0,
+        0.1,
+        20_000,
         partial(compute_cost_logistic, lambda_=lambda_),
         partial(compute_gradient_logistic, lambda_=lambda_),
     )

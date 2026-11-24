@@ -34,9 +34,12 @@ ws = np.linspace(-3, 6, 181)
 squared = np.array([np.mean((predict_proba(km, np.array([w]), -5.0) - y) ** 2) / 2 for w in ws])
 logistic = np.array([compute_cost_logistic(km, y, np.array([w]), -5.0) for w in ws])
 print("\ncost along w (distance only, b = -5)")
-print(f"  squared error: lowest {squared.min():.3f} at w = {ws[squared.argmin()]:.2f}, flat at {squared[0]:.3f} for w < -1")
-print(f"  logistic:      lowest {logistic.min():.3f} at w = {ws[logistic.argmin()]:.2f}, and {logistic[0]:.1f} at w = -3")
-print(f"  places where the curve bends the wrong way: squared {np.sum(np.diff(squared, 2) < -1e-9)}, logistic {np.sum(np.diff(logistic, 2) < -1e-9)}")
+flat = squared[0]
+print(f"  squared error: lowest {squared.min():.3f} at w = {ws[squared.argmin()]:.2f}, flat at {flat:.3f} for w < -1")
+print(f"  logistic:      lowest {logistic.min():.3f} at w = {ws[logistic.argmin()]:.2f}, {logistic[0]:.1f} at w = -3")
+bends_squared = np.sum(np.diff(squared, 2) < -1e-9)
+bends_logistic = np.sum(np.diff(logistic, 2) < -1e-9)
+print(f"  places where the curve bends the wrong way: squared {bends_squared}, logistic {bends_logistic}")
 
 # 5. Plot
 fig, axes = plt.subplots(1, 3, figsize=(13, 4))

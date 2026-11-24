@@ -83,7 +83,9 @@ def test_regularized_gradient_matches_a_numerical_derivative(cost, gradient):
     for j in range(2):
         step = np.zeros(2)
         step[j] = h
-        numeric = (cost(X_small, y_small, w + step, b, lambda_) - cost(X_small, y_small, w - step, b, lambda_)) / (2 * h)
+        numeric = (cost(X_small, y_small, w + step, b, lambda_) - cost(X_small, y_small, w - step, b, lambda_)) / (
+            2 * h
+        )
         assert dj_dw[j] == pytest.approx(numeric, rel=1e-5)
 
 
@@ -91,7 +93,12 @@ def test_a_larger_lambda_gives_smaller_weights():
     sizes = []
     for lambda_ in (0.0, 1.0, 10.0):
         w, _, _ = gradient_descent(
-            X_small, y_small, np.zeros(2), 0.0, 0.1, 5000,
+            X_small,
+            y_small,
+            np.zeros(2),
+            0.0,
+            0.1,
+            5000,
             partial(compute_cost_logistic, lambda_=lambda_),
             partial(compute_gradient_logistic, lambda_=lambda_),
         )
@@ -135,7 +142,12 @@ def test_regularization_reduces_overfitting():
     results = {}
     for lambda_ in (0.0, 1.0):
         w, b, _ = gradient_descent(
-            Z_train, y_train, np.zeros(Z_train.shape[1]), 0.0, 0.1, 20_000,
+            Z_train,
+            y_train,
+            np.zeros(Z_train.shape[1]),
+            0.0,
+            0.1,
+            20_000,
             partial(compute_cost_logistic, lambda_=lambda_),
             partial(compute_gradient_logistic, lambda_=lambda_),
         )

@@ -1,11 +1,19 @@
 [project]
 name = "machine_learning_from_scratch"
 version = "0.1.0"
+description = "Linear and logistic regression with gradient descent, built from scratch in Python and NumPy."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["machine-learning", "linear-regression", "logistic-regression", "gradient-descent", "numpy"]
 requires-python = ">=3.12"
 dependencies = [
     "matplotlib>=3.11.2",
     "numpy>=2.5.4",
 ]
+
+[project.urls]
+Repository = "https://github.com/sandersonfsl/machine_learning_from_scratch"
 
 [build-system]
 requires = ["uv_build>=0.13.1,<0.14.0"]
@@ -14,4 +22,18 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+    "ruff>=0.17.6",
 ]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+exclude = ["*.md"]  # the code blocks in the docs are aligned by hand
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]  # pycodestyle, pyflakes, import order, modern syntax, likely bugs
+ignore = ["B905"]  # zip() on lists of different lengths is intended in places (e.g. costs, costs[1:])
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/13_vectorization.py" = ["B023"]  # the timed lambdas run right away, inside the loop

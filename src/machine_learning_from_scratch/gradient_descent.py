@@ -2,9 +2,7 @@ from machine_learning_from_scratch.cost import compute_cost
 from machine_learning_from_scratch.gradient import compute_gradient
 
 
-def gradient_descent(
-    x, y, w, b, alpha, num_iters, cost_function=compute_cost, gradient_function=compute_gradient
-):
+def gradient_descent(x, y, w, b, alpha, num_iters, cost_function=compute_cost, gradient_function=compute_gradient):
     """Repeat the gradient step num_iters times, starting from w and b.
 
     By default it trains linear regression. For another model, pass its cost and

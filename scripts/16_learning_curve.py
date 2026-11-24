@@ -15,7 +15,7 @@ epsilon = 1e-3
 alphas = [0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0, 1.9, 2.0]
 
 print(f"{iterations} iterations on the scaled features, epsilon = {epsilon}")
-print(f"{'alpha':>7} {'final cost':>12} {"never up":>12} {'converged at':>13}")
+print(f"{'alpha':>7} {'final cost':>12} {'never up':>12} {'converged at':>13}")
 curves = {}
 for alpha in alphas:
     with np.errstate(all="ignore"):

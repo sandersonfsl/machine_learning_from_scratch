@@ -17,6 +17,4 @@ def polynomial_features_2d(X, degree):
     The columns come ordered by total degree: x1, x2, then x1**2, x1*x2, x2**2, and so on.
     """
     x1, x2 = X[:, 0], X[:, 1]
-    return np.column_stack(
-        [x1 ** (d - j) * x2**j for d in range(1, degree + 1) for j in range(d + 1)]
-    )
+    return np.column_stack([x1 ** (d - j) * x2**j for d in range(1, degree + 1) for j in range(d + 1)])
