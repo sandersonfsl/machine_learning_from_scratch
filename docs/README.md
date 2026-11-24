@@ -20,3 +20,8 @@ project root. Mathematical notation is rendered by GitHub.
 15. [Feature scaling](15-feature-scaling.md)
 16. [Learning curve and choosing alpha](16-learning-curve.md)
 17. [Feature engineering and polynomial regression](17-feature-engineering.md)
+18. [Classification and the sigmoid function](18-classification-and-sigmoid.md)
+19. [The logistic model and the decision boundary](19-logistic-model.md)
+20. [The logistic cost function](20-logistic-cost.md)
+21. [Gradient descent for logistic regression](21-logistic-gradient-descent.md)
+22. [Overfitting and regularization](22-regularization.md)

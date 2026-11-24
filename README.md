@@ -1,6 +1,6 @@
 # Machine Learning from Scratch
 
-Linear regression and gradient descent built from scratch in Python and NumPy: model, cost function, optimizer, tests and visualizations, in a step-by-step walkthrough.
+Linear regression, logistic regression and gradient descent built from scratch in Python and NumPy: model, cost function, optimizer, regularization, tests and visualizations, in a step-by-step walkthrough.
 
 <p align="center">
   <img src="figures/plot_result.png" width="85%">
@@ -14,7 +14,7 @@ Requires [uv](https://docs.astral.sh/uv/) (see [Step 1](docs/01-setup.md)). Ever
 
 ```bash
 uv sync                                       # create the environment (once)
-uv run pytest                                 # run the tests: 35 passed
+uv run pytest                                 # run the tests: 78 passed
 uv run scripts/09_gradient_descent.py         # train a model: w = 2.85, b = 12.85
 for f in scripts/*.py; do uv run "$f"; done   # run every script
 ```
@@ -42,6 +42,11 @@ Each step adds code to the library and has a document with the theory, the code 
 | 15 | Feature scaling | `15_feature_scaling.py` | [15-feature-scaling](docs/15-feature-scaling.md) |
 | 16 | Learning curve and choosing alpha | `16_learning_curve.py` | [16-learning-curve](docs/16-learning-curve.md) |
 | 17 | Feature engineering and polynomial regression | `17_feature_engineering.py` | [17-feature-engineering](docs/17-feature-engineering.md) |
+| 18 | Classification and the sigmoid function | `18_linear_regression_fails.py`, `18_sigmoid.py` | [18-classification-and-sigmoid](docs/18-classification-and-sigmoid.md) |
+| 19 | The logistic model and the decision boundary | `19_logistic_model.py` | [19-logistic-model](docs/19-logistic-model.md) |
+| 20 | The logistic cost function | `20_logistic_cost.py` | [20-logistic-cost](docs/20-logistic-cost.md) |
+| 21 | Gradient descent for logistic regression | `21_logistic_gradient_descent.py` | [21-logistic-gradient-descent](docs/21-logistic-gradient-descent.md) |
+| 22 | Overfitting and regularization | `22_regularization.py` | [22-regularization](docs/22-regularization.md) |
 
 ## Project structure
 

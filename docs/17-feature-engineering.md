@@ -111,4 +111,4 @@ Together with the earlier tests, `uv run pytest` reports `35 passed`.
 
 ---
 
-[← Step 16: Learning curve and choosing alpha](16-learning-curve.md)
+[← Step 16: Learning curve and choosing alpha](16-learning-curve.md) · [Step 18: Classification and the sigmoid function →](18-classification-and-sigmoid.md)
