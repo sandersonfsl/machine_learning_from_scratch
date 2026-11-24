@@ -78,7 +78,7 @@ one example with y = 0 and z = 40 (f = 1.0, so 1 - f = 0.0)
 
 cost along w (distance only, b = -5)
   squared error: lowest 0.048 at w = 0.80, flat at 0.240 for w < -1
-  logistic:      lowest 0.307 at w = 0.85, and 13.9 at w = -3
+  logistic:      lowest 0.307 at w = 0.85, 13.9 at w = -3
   places where the curve bends the wrong way: squared 151, logistic 0
 ```
 

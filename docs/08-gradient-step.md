@@ -32,6 +32,9 @@ def compute_gradient(x, y, w, b):
     return dj_dw, dj_db
 ```
 
+> In the library this function later gets an optional argument, `lambda_`
+> ([Step 22](22-regularization.md)). With its default, `0.0`, it is exactly the code above.
+
 With a single feature, `np.dot(x.T, errors)` is the same as `(errors * x).sum()`. With
 several features it gives one derivative per weight ([Step 14](14-multiple-gradient-descent.md)).
 

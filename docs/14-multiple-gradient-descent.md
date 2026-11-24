@@ -29,6 +29,9 @@ def compute_gradient(x, y, w, b):
     return dj_dw, dj_db
 ```
 
+> In the library this function later gets an optional argument, `lambda_`
+> ([Step 22](22-regularization.md)). With its default, `0.0`, it is exactly the code above.
+
 `x.T` is the table turned on its side, so each row becomes a feature.
 `np.dot(x.T, errors)` multiplies every feature by the errors and adds the results,
 which yields all the derivatives at once (the vectorized form of two nested loops).

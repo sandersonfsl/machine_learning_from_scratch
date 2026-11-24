@@ -12,6 +12,11 @@ def gradient_descent(x, y, w, b, alpha, num_iters):
     return w, b, costs
 ```
 
+> In the library this function later gets two optional arguments, `cost_function` and
+> `gradient_function`, so that it can train other models
+> ([Step 21](21-logistic-gradient-descent.md)). Their defaults are the functions used
+> above.
+
 The loop starts from `w = 0, b = 0`, with `alpha = 0.01` and 10,000 iterations
 (`compute_gradient` is the function from [Step 8](08-gradient-step.md)).
 
