@@ -9,6 +9,7 @@ machine_learning_from_scratch/
 ├── README.md                             # documentation
 ├── .gitignore
 ├── docs/                                 # one document per step
+├── .github/workflows/ci.yml              # tests, lint and scripts on every push
 ├── src/
 │   └── machine_learning_from_scratch/    # the library
 │       ├── __init__.py
